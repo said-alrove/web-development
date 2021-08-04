@@ -1,0 +1,171 @@
+// *** MEMBERS *** //
+@use '../members/theme' as thm;
+@use '../members/mixins' as mx;
+
+// *** GENERAL *** //
+
+///////////// 
+// HEADER // 
+////////////
+.header {
+    background: 
+    {
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
+
+    @at-root {
+        .webp & { background-image: url(../assets/webp/hero.webp); }
+
+        .no-webp & { background-image: url(../assets/jpg/hero.jpg); }
+        
+        &__wrapper { 
+            .logo { color: thm.$white; }
+            
+            .logo__name { @extend %fw-400; }
+            
+            .logo__name--bold { @extend %fw-700; }
+        }
+
+        &__text { color: thm.$white; }
+
+    }
+}
+
+/////////////////
+// NAVIGATION // 
+//////////////// 
+.navigation {
+    ul { font-size: 1.8rem; }
+    
+    @at-root {
+        &__link { color: thm.$white; }
+    }
+}
+
+/////////////
+// FOOTER // 
+////////////
+.footer { background-color: thm.$black; }
+
+// *** INDEX *** //
+
+////////////////
+// BLOGPOSTS // 
+///////////////
+.blog {
+    @at-root {
+        &__post {
+            border-bottom: 1px solid thm.$gray-100;
+            @at-root {
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        &__content {
+            p { text-align: justify; }
+        }
+    }
+}
+
+//////////////
+// SIDEBAR // 
+/////////////
+.sidebar {
+    @at-root {
+        & > .course {
+            border-bottom: 1px solid thm.$gray-100;
+            @at-root {
+                &:last-of-type { border-bottom: none; }
+            }
+        }
+
+        .course {
+            @at-root {
+                &__label {
+                    font:
+                    {
+                        family: thm.$primary-font;
+                        size: 2rem;
+                    }
+                    @extend %fw-700;
+                }
+
+                &__info {
+                    @extend %fw-400;
+                }
+            }
+        }
+    }
+}
+
+// *** POST *** //
+
+///////////
+// POST // 
+////////// 
+.post {
+    @at-root {
+        &__image { text-align: center; }
+
+        &__content { text-align: justify; }
+    }
+}
+
+// *** COURSES *** //
+
+////////////// 
+// COURSES // 
+///////////// 
+.course {
+    border-bottom: 1px solid thm.$gray-100;
+    
+    &:last-of-type { border-bottom: none; }
+
+    @at-root {
+        &__description { text-align: justify; }
+
+        &__image { text-align: center;  }
+    }
+}
+
+// *** ABOUT US *** //
+
+/////////////// 
+// ABOUT US // 
+//////////////
+.aboutus { text-align: justify; }
+
+// *** CONTACT *** //
+
+//////////////
+// CONTACT // 
+/////////////
+.bg-contact {
+    height: 40rem;
+    background: 
+    {
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
+
+    @at-root {
+        .webp & { background-image: url(../assets/webp/contact.webp); }
+
+        .no-webp & { background-image: url(../assets/jpg/contact.jpg); } 
+    }
+}
+
+/////////// 
+// FORM //
+////////// 
+.contact-form {
+    border: 1px solid thm.$gray-100;
+    background-color: thm.$white;
+
+    .field__input { border: 1px solid thm.$gray-100; }
+}

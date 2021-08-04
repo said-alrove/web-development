@@ -1,0 +1,337 @@
+.header__wrapper .logo__name, .course__info {
+  font-weight: 400;
+}
+
+.button, .header__wrapper .logo__name--bold, .course__label {
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Pt Sans", sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+.header {
+  height: 60rem;
+}
+.header__wrapper {
+  padding-top: 4rem;
+}
+@media (min-width: 768px) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__text {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .header__text {
+    margin-top: 15rem;
+  }
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.navigation__link {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.blog__post {
+  margin-bottom: 2rem;
+}
+.blog__post:last-of-type {
+  margin-bottom: none;
+}
+
+.sidebar > .course {
+  margin-bottom: 2rem;
+}
+.sidebar > .course:last-of-type {
+  margin-bottom: none;
+}
+
+.post__image img {
+  width: 90%;
+}
+
+.courses-container .course {
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .courses-container .course {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.aboutus__image {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form {
+  margin: -5rem auto 0;
+  width: 90%;
+  padding: 5rem 5rem 0;
+}
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+@media (min-width: 552px) {
+  .contact-form .field {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.contact-form .field__label,
+.contact-form .field__input {
+  padding: 1rem;
+}
+.contact-form .field__textarea {
+  flex: 1 1 20rem;
+  padding-top: 1rem;
+  resize: none;
+}
+@media (min-width: 552px) {
+  .contact-form .field__label {
+    flex: 0 0 8rem;
+  }
+  .contact-form .field__input {
+    flex: 1 1 0;
+  }
+  .contact-form .field__textarea {
+    height: 20rem;
+  }
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.webp .header {
+  background-image: url(../assets/webp/hero.webp);
+}
+
+.no-webp .header {
+  background-image: url(../assets/jpg/hero.jpg);
+}
+
+.header__wrapper .logo {
+  color: #FFF;
+}
+.header__text {
+  color: #FFF;
+}
+
+.navigation ul {
+  font-size: 1.8rem;
+}
+.navigation__link {
+  color: #FFF;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.blog__post {
+  border-bottom: 1px solid #E1E1E1;
+}
+.blog__post:last-of-type {
+  border-bottom: none;
+}
+
+.blog__content p {
+  text-align: justify;
+}
+
+.sidebar > .course {
+  border-bottom: 1px solid #E1E1E1;
+}
+.sidebar > .course:last-of-type {
+  border-bottom: none;
+}
+
+.course__label {
+  font-family: "Pt Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.post__image {
+  text-align: center;
+}
+
+.post__content {
+  text-align: justify;
+}
+
+.course {
+  border-bottom: 1px solid #E1E1E1;
+}
+.course:last-of-type {
+  border-bottom: none;
+}
+.course__description {
+  text-align: justify;
+}
+
+.course__image {
+  text-align: center;
+}
+
+.aboutus {
+  text-align: justify;
+}
+
+.bg-contact {
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.webp .bg-contact {
+  background-image: url(../assets/webp/contact.webp);
+}
+
+.no-webp .bg-contact {
+  background-image: url(../assets/jpg/contact.jpg);
+}
+
+.contact-form {
+  border: 1px solid #E1E1E1;
+  background-color: #FFF;
+}
+.contact-form .field__input {
+  border: 1px solid #E1E1E1;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 110rem);
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  font-family: "Pt Sans", sans-serif;
+  font-size: 1.8rem;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .button {
+    display: inline-block;
+  }
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #000;
+}
+
+.secundary-btn {
+  background-color: #784D3C;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,153 @@
+// *** MEMBERS *** //
+@use '../members/theme' as thm;
+@use '../members/mixins' as mx;
+
+// *** GENERAL *** //
+
+///////////// 
+// HEADER // 
+////////////
+.header {
+    height: 60rem;
+
+    @at-root {
+        &__wrapper { 
+            padding-top: 4rem; 
+            @include mx.small-tablet {
+                @include mx.flexbox($justify: space-between, $align: center);
+            }
+        }
+
+        &__text { 
+            margin-top: 3rem; 
+            padding: 0 1rem;
+            @include mx.small-tablet { margin-top: 15rem; }
+        }
+    }
+}
+
+/////////////////
+// NAVIGATION // 
+//////////////// 
+.navigation {
+    ul {
+        @include mx.flexbox($direction: column);
+        @include mx.small-tablet { @include mx.flexbox($direction: row, $gap: 2rem); }
+    }
+
+    @at-root {
+        &__link { width: 100%; }
+    }
+}
+
+/////////////
+// FOOTER // 
+////////////
+.footer {
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+// *** INDEX *** //
+
+////////////////
+// BLOGPOSTS // 
+///////////////
+.blog {
+    @at-root {
+        &__post {
+            margin-bottom: 2rem;
+            @at-root {
+                &:last-of-type {
+                    margin-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+//////////////
+// SIDEBAR // 
+/////////////
+.sidebar {
+    @at-root {
+        & > .course {
+            margin-bottom: 2rem;
+            @at-root {
+                &:last-of-type { margin-bottom: none; }
+            }
+        }
+    }
+}
+
+// *** POST *** //
+
+///////////
+// POST // 
+////////// 
+.post {
+    @at-root {
+        &__image {
+            img { width: 90%; }
+        }
+    }
+}
+
+// *** COURSES *** //
+
+////////////// 
+// COURSES // 
+///////////// 
+.courses-container {
+    .course {
+        @include mx.small-tablet { @include mx.grid($columns: 1fr 2fr, $gap: 2rem); }
+        padding: 3rem 0;
+    }
+}
+
+// *** ABOUT US *** //
+
+/////////////// 
+// ABOUT US // 
+//////////////
+.aboutus {
+    @include mx.big-tablet { @include mx.grid($columns: repeat(2, 1fr), $gap: 2rem); }
+    
+    @at-root {
+        &__image { @include mx.flexbox($align: center); }
+    }
+}
+
+// *** CONTACT *** //
+
+/////////// 
+// FORM //
+////////// 
+.contact-form {
+    margin: -5rem auto 0;
+    width: 90%;
+    padding: 5rem 5rem 0;
+
+    .field {
+        @include mx.flexbox($direction: column);
+        @include mx.smartphone { @include mx.flexbox($direction: row); }
+        margin-bottom: 2rem;
+    }
+
+    .field__label,
+    .field__input { padding: 1rem; }
+
+    .field__textarea {
+        flex: 1 1 20rem;
+        padding-top: 1rem;
+        resize: none;
+    }
+
+    @include mx.smartphone {
+        .field__label { flex: 0 0 8rem; }
+
+        .field__input { flex: 1 1 0; }
+
+        .field__textarea { height: 20rem; }
+    }
+}
