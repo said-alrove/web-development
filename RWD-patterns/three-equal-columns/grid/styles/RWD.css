@@ -1,0 +1,49 @@
+/* BASE */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px; 
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+img { max-width: 100%; }
+
+h2 { font-size: 4rem; }
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+    padding: 1rem 0;
+}
+
+.blogpost > p { 
+    font-size: 1.8rem;
+    text-align: justify; 
+}
+
+.blogpost > a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* CODE HERE */
+@media (min-width: 768px) {
+    .three-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
