@@ -1,0 +1,12 @@
+[submodule "freelancer-home"]
+	path = freelancer-home
+	url = https://github.com/said-alrove/freelancer-home.git
+[submodule "frontend-store"]
+	path = frontend-store
+	url = https://github.com/said-alrove/frontend-store.git
+[submodule "coffee-blog"]
+	path = coffee-blog
+	url = https://github.com/said-alrove/coffee-blog.git
+[submodule "rwd-patterns"]
+	path = rwd-patterns
+	url = https://github.com/said-alrove/rwd-patterns.git
