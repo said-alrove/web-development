@@ -1,6 +1,3 @@
-[submodule "freelancer-home"]
-	path = freelancer-home
-	url = https://github.com/said-alrove/freelancer-home.git
 [submodule "frontend-store"]
 	path = frontend-store
 	url = https://github.com/said-alrove/frontend-store.git
@@ -10,3 +7,6 @@
 [submodule "rwd-patterns"]
 	path = rwd-patterns
 	url = https://github.com/said-alrove/rwd-patterns.git
+[submodule "freelancer-designer"]
+	path = freelancer-designer
+	url = https://github.com/said-alrove/freelancer-designer.git
